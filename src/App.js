@@ -1,15 +1,17 @@
 import React from 'react';
-import TrafficSignal from './TrafficSignal';
 import './App.css';
-import Cars from './Cars';
+import CarProvider from './CarProvider';
+import TrafficProvider from './TrafficProvider';
 
-function App() {
-  return (
-    <div className="container">
-      <Cars />
-      <TrafficSignal />
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="container">
+        <CarProvider />
+        <TrafficProvider />
+        </div>
+    );
+  }
 }
 
 export default App;
